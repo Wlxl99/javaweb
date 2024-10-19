@@ -1,302 +1,272 @@
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`) VALUES ('2021001', '张三', '男', '2003-05-15', '计算机一班');
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`) VALUES ('2021002', '李四', '女', '2003-08-22', '计算机一班');
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`) VALUES ('2021003', '王五', '男', '2002-11-30', '数学一班');
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`) VALUES ('2021004', '赵六', '女', '2003-02-14', '数学一班');
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`) VALUES ('2021005', '钱七', '男', '2002-07-08', '物理一班');
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`) VALUES ('2021006', '孙八', '女', '2003-09-19', '物理一班');
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`) VALUES ('2021007', '周九', '男', '2002-12-01', '化学一班');
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`) VALUES ('2021008', '吴十', '女', '2003-03-25', '化学一班');
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`) VALUES ('2021009', '郑十一', '男', '2002-06-11', '生物一班');
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`) VALUES ('2021010', '王十二', '女', '2003-10-05', '生物一班');
-INSERT INTO `练习` (`course_id`, `course_name`, `teacher_id`, `credits`) VALUES ('C001', '高等数学', 'T001', 4.0);
-INSERT INTO `练习` (`course_id`, `course_name`, `teacher_id`, `credits`) VALUES ('C002', '大学物理', 'T002', 3.5);
-INSERT INTO `练习` (`course_id`, `course_name`, `teacher_id`, `credits`) VALUES ('C003', '程序设计', 'T003', 4.0);
-INSERT INTO `练习` (`course_id`, `course_name`, `teacher_id`, `credits`) VALUES ('C004', '数据结构', 'T004', 3.5);
-INSERT INTO `练习` (`course_id`, `course_name`, `teacher_id`, `credits`) VALUES ('C005', '数据库原理', 'T005', 4.0);
-INSERT INTO `练习` (`course_id`, `course_name`, `teacher_id`, `credits`) VALUES ('C006', '操作系统', 'T006', 3.5);
-INSERT INTO `练习` (`name`, `student_id`, `my_class`) VALUES ('张三', '2021001', '计算机一班');
-INSERT INTO `练习` (`name`, `student_id`, `my_class`) VALUES ('李四', '2021002', '计算机一班');
-INSERT INTO `练习` (`name`, `student_id`, `my_class`) VALUES ('王五', '2021003', '数学一班');
-INSERT INTO `练习` (`name`, `student_id`, `my_class`) VALUES ('赵六', '2021004', '数学一班');
-INSERT INTO `练习` (`name`, `student_id`, `my_class`) VALUES ('钱七', '2021005', '物理一班');
-INSERT INTO `练习` (`name`, `student_id`, `my_class`) VALUES ('孙八', '2021006', '物理一班');
-INSERT INTO `练习` (`name`, `student_id`, `my_class`) VALUES ('周九', '2021007', '化学一班');
-INSERT INTO `练习` (`name`, `student_id`, `my_class`) VALUES ('吴十', '2021008', '化学一班');
-INSERT INTO `练习` (`name`, `student_id`, `my_class`) VALUES ('郑十一', '2021009', '生物一班');
-INSERT INTO `练习` (`name`, `student_id`, `my_class`) VALUES ('王十二', '2021010', '生物一班');
-INSERT INTO `练习` (`name`, `title`) VALUES ('张教授', '教授');
-INSERT INTO `练习` (`name`, `title`) VALUES ('李副教授', '副教授');
-INSERT INTO `练习` (`name`, `title`) VALUES ('王讲师', '讲师');
-INSERT INTO `练习` (`name`, `title`) VALUES ('赵助教', '助教');
-INSERT INTO `练习` (`name`, `title`) VALUES ('钱教授', '教授');
-INSERT INTO `练习` (`name`, `title`) VALUES ('孙副教授', '副教授');
-INSERT INTO `练习` (`name`, `title`) VALUES ('周讲师', '讲师');
-INSERT INTO `练习` (`name`, `title`) VALUES ('吴助教', '助教');
-INSERT INTO `练习` (`name`, `title`) VALUES ('郑教授', '教授');
-INSERT INTO `练习` (`name`, `title`) VALUES ('刘副教授', '副教授');
-INSERT INTO `练习` (`course_id`, `平均分数`) VALUES ('C001', 81.41667);
-INSERT INTO `练习` (`course_id`, `平均分数`) VALUES ('C002', 80.08333);
-INSERT INTO `练习` (`course_id`, `平均分数`) VALUES ('C003', 82.90000);
-INSERT INTO `练习` (`course_id`, `平均分数`) VALUES ('C004', 82.80000);
-INSERT INTO `练习` (`course_id`, `平均分数`) VALUES ('C005', 83.37500);
-INSERT INTO `练习` (`course_id`, `平均分数`) VALUES ('C006', 89.12500);
-INSERT INTO `练习` (`name`, `平均分数`) VALUES ('张三', 84.66667);
-INSERT INTO `练习` (`name`, `平均分数`) VALUES ('李四', 77.83333);
-INSERT INTO `练习` (`name`, `平均分数`) VALUES ('王五', 77.00000);
-INSERT INTO `练习` (`name`, `平均分数`) VALUES ('赵六', 89.00000);
-INSERT INTO `练习` (`name`, `平均分数`) VALUES ('钱七', 77.50000);
-INSERT INTO `练习` (`name`, `平均分数`) VALUES ('孙八', 84.16667);
-INSERT INTO `练习` (`name`, `平均分数`) VALUES ('周九', 92.33333);
-INSERT INTO `练习` (`name`, `平均分数`) VALUES ('吴十', 88.33333);
-INSERT INTO `练习` (`name`, `平均分数`) VALUES ('郑十一', 76.00000);
-INSERT INTO `练习` (`name`, `平均分数`) VALUES ('王十二', 82.33333);
-INSERT INTO `练习` (`student_id`, `course_id`) VALUES ('2021001', 'C001');
-INSERT INTO `练习` (`student_id`, `course_id`) VALUES ('2021001', 'C003');
-INSERT INTO `练习` (`student_id`, `course_id`) VALUES ('2021002', 'C001');
-INSERT INTO `练习` (`student_id`, `course_id`) VALUES ('2021004', 'C002');
-INSERT INTO `练习` (`student_id`, `course_id`) VALUES ('2021004', 'C004');
-INSERT INTO `练习` (`student_id`, `course_id`) VALUES ('2021004', 'C006');
-INSERT INTO `练习` (`student_id`, `course_id`) VALUES ('2021005', 'C003');
-INSERT INTO `练习` (`student_id`, `course_id`) VALUES ('2021006', 'C006');
-INSERT INTO `练习` (`student_id`, `course_id`) VALUES ('2021007', 'C001');
-INSERT INTO `练习` (`student_id`, `course_id`) VALUES ('2021007', 'C003');
-INSERT INTO `练习` (`student_id`, `course_id`) VALUES ('2021007', 'C005');
-INSERT INTO `练习` (`student_id`, `course_id`) VALUES ('2021008', 'C002');
-INSERT INTO `练习` (`student_id`, `course_id`) VALUES ('2021008', 'C004');
-INSERT INTO `练习` (`student_id`, `course_id`) VALUES ('2021008', 'C006');
-INSERT INTO `练习` (`student_id`, `course_id`) VALUES ('2021009', 'C005');
-INSERT INTO `练习` (`student_id`, `course_id`) VALUES ('2021010', 'C004');
-INSERT INTO `练习` (`student_id`, `course_id`) VALUES ('2021010', 'C006');
-INSERT INTO `练习` (`course_name`, `选课人数`) VALUES ('高等数学', 6);
-INSERT INTO `练习` (`course_name`, `选课人数`) VALUES ('大学物理', 6);
-INSERT INTO `练习` (`course_name`, `选课人数`) VALUES ('程序设计', 5);
-INSERT INTO `练习` (`course_name`, `选课人数`) VALUES ('数据结构', 5);
-INSERT INTO `练习` (`course_name`, `选课人数`) VALUES ('数据库原理', 4);
-INSERT INTO `练习` (`course_name`, `选课人数`) VALUES ('操作系统', 4);
-INSERT INTO `练习` (`name`, `score`) VALUES ('张三', 85.5);
-INSERT INTO `练习` (`name`, `score`) VALUES ('李四', 92.0);
-INSERT INTO `练习` (`name`, `score`) VALUES ('王五', 76.5);
-INSERT INTO `练习` (`name`, `score`) VALUES ('钱七', 61.0);
-INSERT INTO `练习` (`name`, `score`) VALUES ('周九', 93.5);
-INSERT INTO `练习` (`name`, `score`) VALUES ('郑十一', 80.0);
-INSERT INTO `练习` (`name`) VALUES ('王五');
-INSERT INTO `练习` (`name`) VALUES ('钱七');
-INSERT INTO `练习` (`name`) VALUES ('周九');
-INSERT INTO `练习` (`name`) VALUES ('郑十一');
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`, `score`, `score`) VALUES ('2021001', '张三', '男', '2003-05-15', '计算机一班', 85.5, 78.0);
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`, `score`, `score`) VALUES ('2021002', '李四', '女', '2003-08-22', '计算机一班', 92.0, 83.5);
-INSERT INTO `练习` (`course_id`, `course_name`, `85-100`, `70-84`, `60-69`, `0-59`, `85-100百分比`, `70-84百分比`, `60-69百分比`, `0-59百分比`) VALUES ('C001', '高等数学', 3, 2, 1, 0, 50.00, 33.33, 16.67, 0.00);
-INSERT INTO `练习` (`course_id`, `course_name`, `85-100`, `70-84`, `60-69`, `0-59`, `85-100百分比`, `70-84百分比`, `60-69百分比`, `0-59百分比`) VALUES ('C002', '大学物理', 2, 3, 1, 0, 33.33, 50.00, 16.67, 0.00);
-INSERT INTO `练习` (`course_id`, `course_name`, `85-100`, `70-84`, `60-69`, `0-59`, `85-100百分比`, `70-84百分比`, `60-69百分比`, `0-59百分比`) VALUES ('C003', '程序设计', 4, 0, 1, 0, 80.00, 0.00, 20.00, 0.00);
-INSERT INTO `练习` (`course_id`, `course_name`, `85-100`, `70-84`, `60-69`, `0-59`, `85-100百分比`, `70-84百分比`, `60-69百分比`, `0-59百分比`) VALUES ('C004', '数据结构', 3, 1, 0, 1, 60.00, 20.00, 0.00, 20.00);
-INSERT INTO `练习` (`course_id`, `course_name`, `85-100`, `70-84`, `60-69`, `0-59`, `85-100百分比`, `70-84百分比`, `60-69百分比`, `0-59百分比`) VALUES ('C005', '数据库原理', 2, 1, 0, 0, 50.00, 25.00, 0.00, 0.00);
-INSERT INTO `练习` (`course_id`, `course_name`, `85-100`, `70-84`, `60-69`, `0-59`, `85-100百分比`, `70-84百分比`, `60-69百分比`, `0-59百分比`) VALUES ('C006', '操作系统', 4, 0, 0, 0, 100.00, 0.00, 0.00, 0.00);
-INSERT INTO `练习` (`student_id`, `name`, `score`, `score`) VALUES ('2021001', '张三', 78.0, NULL);
-INSERT INTO `练习` (`name`, `average_score`) VALUES ('周九', 92.33333);
-INSERT INTO `练习` (`name`, `total_score`) VALUES ('周九', 277.0);
-INSERT INTO `练习` (`name`, `total_score`) VALUES ('赵六', 267.0);
-INSERT INTO `练习` (`name`, `total_score`) VALUES ('吴十', 265.0);
-INSERT INTO `练习` (`name`) VALUES ('赵六');
-INSERT INTO `练习` (`name`) VALUES ('周九');
-INSERT INTO `练习` (`name`) VALUES ('吴十');
-INSERT INTO `练习` (`gender`, `人数`) VALUES ('男', 5);
-INSERT INTO `练习` (`gender`, `人数`) VALUES ('女', 5);
-INSERT INTO `练习` (`name`) VALUES ('郑十一');
-INSERT INTO `练习` (`name`) VALUES ('赵助教');
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`) VALUES ('2021001', '张三', '男', '2003-05-15', '计算机一班');
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`) VALUES ('2021002', '李四', '女', '2003-08-22', '计算机一班');
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`) VALUES ('2021003', '王五', '男', '2002-11-30', '数学一班');
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`) VALUES ('2021005', '钱七', '男', '2002-07-08', '物理一班');
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`) VALUES ('2021007', '周九', '男', '2002-12-01', '化学一班');
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`) VALUES ('2021009', '郑十一', '男', '2002-06-11', '生物一班');
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`) VALUES ('2021002', '李四', '女', '2003-08-22', '计算机一班');
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`) VALUES ('2021003', '王五', '男', '2002-11-30', '数学一班');
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`) VALUES ('2021005', '钱七', '男', '2002-07-08', '物理一班');
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`) VALUES ('2021007', '周九', '男', '2002-12-01', '化学一班');
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`) VALUES ('2021009', '郑十一', '男', '2002-06-11', '生物一班');
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`) VALUES ('2021004', '赵六', '女', '2003-02-14', '数学一班');
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`) VALUES ('2021006', '孙八', '女', '2003-09-19', '物理一班');
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`) VALUES ('2021008', '吴十', '女', '2003-03-25', '化学一班');
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`) VALUES ('2021010', '王十二', '女', '2003-10-05', '生物一班');
-INSERT INTO `练习` (`course_name`, `average_score`) VALUES ('操作系统', 89.12500);
-INSERT INTO `练习` (`course_name`, `average_score`) VALUES ('数据库原理', 83.37500);
-INSERT INTO `练习` (`course_name`, `average_score`) VALUES ('程序设计', 82.90000);
-INSERT INTO `练习` (`course_name`, `average_score`) VALUES ('数据结构', 82.80000);
-INSERT INTO `练习` (`course_name`, `average_score`) VALUES ('高等数学', 81.41667);
-INSERT INTO `练习` (`course_name`, `average_score`) VALUES ('大学物理', 80.08333);
-INSERT INTO `练习` (`course_name`, `score`) VALUES ('高等数学', 85.5);
-INSERT INTO `练习` (`course_name`, `score`) VALUES ('大学物理', 78.0);
-INSERT INTO `练习` (`course_name`, `score`) VALUES ('程序设计', 90.5);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('张三', '高等数学', 85.5);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('张三', '大学物理', 78.0);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('张三', '程序设计', 90.5);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('李四', '高等数学', 92.0);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('李四', '大学物理', 83.5);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('李四', '数据结构', 58.0);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('王五', '高等数学', 76.5);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('王五', '程序设计', 85.0);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('王五', '数据库原理', 69.5);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('赵六', '大学物理', 88.5);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('赵六', '数据结构', 92.5);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('赵六', '操作系统', 86.0);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('钱七', '高等数学', 61.0);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('钱七', '程序设计', 87.5);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('钱七', '数据库原理', 84.0);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('孙八', '大学物理', 79.5);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('孙八', '数据结构', 83.0);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('孙八', '操作系统', 90.0);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('周九', '高等数学', 93.5);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('周九', '程序设计', 89.0);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('周九', '数据库原理', 94.5);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('吴十', '大学物理', 86.5);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('吴十', '数据结构', 91.0);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('吴十', '操作系统', 87.5);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('郑十一', '高等数学', 80.0);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('郑十一', '程序设计', 62.5);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('郑十一', '数据库原理', 85.5);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('王十二', '大学物理', 64.5);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('王十二', '数据结构', 89.5);
-INSERT INTO `练习` (`name`, `course_name`, `score`) VALUES ('王十二', '操作系统', 93.0);
-INSERT INTO `练习` (`name`, `平均分数`) VALUES ('张教授', 81.41667);
-INSERT INTO `练习` (`name`, `平均分数`) VALUES ('李副教授', 80.08333);
-INSERT INTO `练习` (`name`, `平均分数`) VALUES ('王讲师', 82.90000);
-INSERT INTO `练习` (`name`, `平均分数`) VALUES ('赵助教', 82.80000);
-INSERT INTO `练习` (`name`, `平均分数`) VALUES ('钱教授', 83.37500);
-INSERT INTO `练习` (`name`, `平均分数`) VALUES ('孙副教授', 89.12500);
-INSERT INTO `练习` (`name`, `course_name`) VALUES ('张三', '高等数学');
-INSERT INTO `练习` (`name`, `course_name`) VALUES ('李四', '大学物理');
-INSERT INTO `练习` (`name`, `course_name`) VALUES ('王五', '程序设计');
-INSERT INTO `练习` (`name`, `course_name`) VALUES ('赵六', '大学物理');
-INSERT INTO `练习` (`name`, `course_name`) VALUES ('赵六', '操作系统');
-INSERT INTO `练习` (`name`, `course_name`) VALUES ('钱七', '程序设计');
-INSERT INTO `练习` (`name`, `course_name`) VALUES ('钱七', '数据库原理');
-INSERT INTO `练习` (`name`, `course_name`) VALUES ('孙八', '数据结构');
-INSERT INTO `练习` (`name`, `course_name`) VALUES ('孙八', '操作系统');
-INSERT INTO `练习` (`name`, `course_name`) VALUES ('周九', '程序设计');
-INSERT INTO `练习` (`name`, `course_name`) VALUES ('吴十', '大学物理');
-INSERT INTO `练习` (`name`, `course_name`) VALUES ('吴十', '操作系统');
-INSERT INTO `练习` (`name`, `course_name`) VALUES ('郑十一', '高等数学');
-INSERT INTO `练习` (`name`, `course_name`) VALUES ('郑十一', '数据库原理');
-INSERT INTO `练习` (`name`, `course_name`) VALUES ('王十二', '数据结构');
-INSERT INTO `练习` (`my_class`, `平均分数`) VALUES ('计算机一班', 81.25000);
-INSERT INTO `练习` (`my_class`, `平均分数`) VALUES ('数学一班', 83.00000);
-INSERT INTO `练习` (`my_class`, `平均分数`) VALUES ('物理一班', 80.83333);
-INSERT INTO `练习` (`my_class`, `平均分数`) VALUES ('化学一班', 90.33333);
-INSERT INTO `练习` (`my_class`, `平均分数`) VALUES ('生物一班', 79.16667);
-INSERT INTO `练习` (`name`) VALUES ('李四');
-INSERT INTO `练习` (`name`) VALUES ('赵六');
-INSERT INTO `练习` (`name`) VALUES ('孙八');
-INSERT INTO `练习` (`name`) VALUES ('吴十');
-INSERT INTO `练习` (`name`) VALUES ('王十二');
-INSERT INTO `练习` (`student_id`, `name`, `平均成绩`) VALUES ('2021002', '李四', 70.75000);
-INSERT INTO `练习` (`student_id`, `name`, `平均成绩`) VALUES ('2021003', '王五', 73.00000);
-INSERT INTO `练习` (`student_id`, `name`, `平均成绩`) VALUES ('2021005', '钱七', 72.50000);
-INSERT INTO `练习` (`student_id`, `name`, `平均成绩`) VALUES ('2021006', '孙八', 81.25000);
-INSERT INTO `练习` (`student_id`, `name`, `平均成绩`) VALUES ('2021009', '郑十一', 71.25000);
-INSERT INTO `练习` (`name`, `total_score`) VALUES ('周九', 277.0);
-INSERT INTO `练习` (`name`, `total_score`) VALUES ('赵六', 267.0);
-INSERT INTO `练习` (`name`, `total_score`) VALUES ('吴十', 265.0);
-INSERT INTO `练习` (`name`, `total_score`) VALUES ('张三', 254.0);
-INSERT INTO `练习` (`name`, `total_score`) VALUES ('孙八', 252.5);
-INSERT INTO `练习` (`name`, `total_score`) VALUES ('王十二', 247.0);
-INSERT INTO `练习` (`name`, `total_score`) VALUES ('李四', 233.5);
-INSERT INTO `练习` (`name`, `total_score`) VALUES ('钱七', 232.5);
-INSERT INTO `练习` (`name`, `total_score`) VALUES ('王五', 231.0);
-INSERT INTO `练习` (`name`, `total_score`) VALUES ('郑十一', 228.0);
-INSERT INTO `练习` (`course_name`) VALUES ('操作系统');
-INSERT INTO `练习` (`name`, `平均成绩`, `排名`) VALUES ('周九', 92.33333, 1);
-INSERT INTO `练习` (`name`, `平均成绩`, `排名`) VALUES ('赵六', 89.00000, 2);
-INSERT INTO `练习` (`name`, `平均成绩`, `排名`) VALUES ('吴十', 88.33333, 3);
-INSERT INTO `练习` (`name`, `平均成绩`, `排名`) VALUES ('张三', 84.66667, 4);
-INSERT INTO `练习` (`name`, `平均成绩`, `排名`) VALUES ('孙八', 84.16667, 5);
-INSERT INTO `练习` (`name`, `平均成绩`, `排名`) VALUES ('王十二', 82.33333, 6);
-INSERT INTO `练习` (`name`, `平均成绩`, `排名`) VALUES ('李四', 77.83333, 7);
-INSERT INTO `练习` (`name`, `平均成绩`, `排名`) VALUES ('钱七', 77.50000, 8);
-INSERT INTO `练习` (`name`, `平均成绩`, `排名`) VALUES ('王五', 77.00000, 9);
-INSERT INTO `练习` (`name`, `平均成绩`, `排名`) VALUES ('郑十一', 76.00000, 10);
-INSERT INTO `练习` (`course_name`, `name`, `score`) VALUES ('程序设计', '张三', 90.5);
-INSERT INTO `练习` (`course_name`, `name`, `score`) VALUES ('大学物理', '赵六', 88.5);
-INSERT INTO `练习` (`course_name`, `name`, `score`) VALUES ('数据结构', '赵六', 92.5);
-INSERT INTO `练习` (`course_name`, `name`, `score`) VALUES ('高等数学', '周九', 93.5);
-INSERT INTO `练习` (`course_name`, `name`, `score`) VALUES ('数据库原理', '周九', 94.5);
-INSERT INTO `练习` (`course_name`, `name`, `score`) VALUES ('操作系统', '王十二', 93.0);
-INSERT INTO `练习` (`name`) VALUES ('张三');
-INSERT INTO `练习` (`name`) VALUES ('李四');
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('周九', '高等数学', 93.5, 92.33333);
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('周九', '程序设计', 89.0, 92.33333);
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('周九', '数据库原理', 94.5, 92.33333);
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('赵六', '大学物理', 88.5, 89.00000);
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('赵六', '数据结构', 92.5, 89.00000);
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('赵六', '操作系统', 86.0, 89.00000);
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('吴十', '大学物理', 86.5, 88.33333);
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('吴十', '数据结构', 91.0, 88.33333);
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('吴十', '操作系统', 87.5, 88.33333);
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('张三', '高等数学', 85.5, 84.66667);
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('张三', '大学物理', 78.0, 84.66667);
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('张三', '程序设计', 90.5, 84.66667);
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('孙八', '大学物理', 79.5, 84.16667);
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('孙八', '数据结构', 83.0, 84.16667);
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('孙八', '操作系统', 90.0, 84.16667);
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('王十二', '大学物理', 64.5, 82.33333);
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('王十二', '数据结构', 89.5, 82.33333);
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('王十二', '操作系统', 93.0, 82.33333);
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('李四', '高等数学', 92.0, 77.83333);
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('李四', '大学物理', 83.5, 77.83333);
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('李四', '数据结构', 58.0, 77.83333);
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('钱七', '高等数学', 61.0, 77.50000);
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('钱七', '程序设计', 87.5, 77.50000);
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('钱七', '数据库原理', 84.0, 77.50000);
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('王五', '高等数学', 76.5, 77.00000);
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('王五', '程序设计', 85.0, 77.00000);
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('王五', '数据库原理', 69.5, 77.00000);
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('郑十一', '高等数学', 80.0, 76.00000);
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('郑十一', '程序设计', 62.5, 76.00000);
-INSERT INTO `练习` (`name`, `course_name`, `score`, `avg_score`) VALUES ('郑十一', '数据库原理', 85.5, 76.00000);
-INSERT INTO `练习` (`name`, `score`) VALUES ('李四', 58.0);
-INSERT INTO `练习` (`name`, `score`) VALUES ('周九', 94.5);
-INSERT INTO `练习` (`my_class`, `最高分`, `最低分`) VALUES ('计算机一班', 92.0, 58.0);
-INSERT INTO `练习` (`my_class`, `最高分`, `最低分`) VALUES ('数学一班', 92.5, 69.5);
-INSERT INTO `练习` (`my_class`, `最高分`, `最低分`) VALUES ('物理一班', 90.0, 61.0);
-INSERT INTO `练习` (`my_class`, `最高分`, `最低分`) VALUES ('化学一班', 94.5, 86.5);
-INSERT INTO `练习` (`my_class`, `最高分`, `最低分`) VALUES ('生物一班', 93.0, 62.5);
-INSERT INTO `练习` (`course_name`, `优秀率`) VALUES ('高等数学', 33.3333);
-INSERT INTO `练习` (`course_name`, `优秀率`) VALUES ('大学物理', 0.0000);
-INSERT INTO `练习` (`course_name`, `优秀率`) VALUES ('程序设计', 20.0000);
-INSERT INTO `练习` (`course_name`, `优秀率`) VALUES ('数据结构', 40.0000);
-INSERT INTO `练习` (`course_name`, `优秀率`) VALUES ('数据库原理', 25.0000);
-INSERT INTO `练习` (`course_name`, `优秀率`) VALUES ('操作系统', 50.0000);
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`, `p_avg_sc`, `c_avg_sc`) VALUES ('2021001', '张三', '男', '2003-05-15', '计算机一班', 84.66667, 81.250000000);
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`, `p_avg_sc`, `c_avg_sc`) VALUES ('2021004', '赵六', '女', '2003-02-14', '数学一班', 89.00000, 83.000000000);
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`, `p_avg_sc`, `c_avg_sc`) VALUES ('2021006', '孙八', '女', '2003-09-19', '物理一班', 84.16667, 80.833330000);
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`, `p_avg_sc`, `c_avg_sc`) VALUES ('2021007', '周九', '男', '2002-12-01', '化学一班', 92.33333, 90.333330000);
-INSERT INTO `练习` (`student_id`, `name`, `gender`, `birth_date`, `my_class`, `p_avg_sc`, `c_avg_sc`) VALUES ('2021010', '王十二', '女', '2003-10-05', '生物一班', 82.33333, 79.166670000);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('张三', '高等数学', 4.08333);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('李四', '高等数学', 10.58333);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('王五', '高等数学', -4.91667);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('钱七', '高等数学', -20.41667);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('周九', '高等数学', 12.08333);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('郑十一', '高等数学', -1.41667);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('张三', '大学物理', -2.08333);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('李四', '大学物理', 3.41667);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('赵六', '大学物理', 8.41667);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('孙八', '大学物理', -0.58333);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('吴十', '大学物理', 6.41667);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('王十二', '大学物理', -15.58333);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('张三', '程序设计', 7.60000);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('王五', '程序设计', 2.10000);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('钱七', '程序设计', 4.60000);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('周九', '程序设计', 6.10000);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('郑十一', '程序设计', -20.40000);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('李四', '数据结构', -24.80000);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('赵六', '数据结构', 9.70000);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('孙八', '数据结构', 0.20000);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('吴十', '数据结构', 8.20000);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('王十二', '数据结构', 6.70000);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('王五', '数据库原理', -13.87500);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('钱七', '数据库原理', 0.62500);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('周九', '数据库原理', 11.12500);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('郑十一', '数据库原理', 2.12500);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('赵六', '操作系统', -3.12500);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('孙八', '操作系统', 0.87500);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('吴十', '操作系统', -1.62500);
-INSERT INTO `练习` (`name`, `course_name`, `差值`) VALUES ('王十二', '操作系统', 3.87500);
+-- 1. 查询所有学生的信息。
+SELECT s.*
+FROM student s;
+
+-- 2. 查询所有课程的信息。
+SELECT c.*
+FROM course c;
+
+-- 3. 查询所有学生的姓名、学号和班级。
+SELECT s.name,s.student_id,s.my_class 
+FROM student s;
+
+-- 4. 查询所有教师的姓名和职称。
+SELECT name,title
+FROM teacher;
+
+-- 5. 查询不同课程的平均分数。
+SELECT sc.course_id,AVG(sc.score) 平均分数
+FROM score sc
+GROUP BY sc.course_id;
+
+-- 6. 查询每个学生的平均分数。
+SELECT s.name,AVG(sc.score) 平均分数
+FROM student s,score sc
+WHERE s.student_id=sc.student_id
+GROUP BY s.student_id;
+
+-- 7. 查询分数大于85分的学生学号和课程号。
+SELECT student_id,course_id
+FROM score sc
+WHERE sc.score>85; 
+
+-- 8. 查询每门课程的选课人数。
+SELECT c.course_name,COUNT(sc.student_id) 选课人数
+FROM course c,score sc
+WHERE c.course_id=sc.course_id
+GROUP BY sc.course_id;
+
+-- 9. 查询选修了"高等数学"课程的学生姓名和分数。
+SELECT name,score
+FROM student,course,score
+WHERE student.student_id=score.student_id AND score.course_id=course.course_id AND course_name='高等数学';
+
+-- 10. 查询没有选修"大学物理"课程的学生姓名。
+SELECT s.name
+FROM student s
+WHERE s.student_id NOT IN (
+    SELECT sc.student_id
+    FROM score sc
+    JOIN course c ON sc.course_id = c.course_id
+    WHERE c.course_name = '大学物理');
+
+-- 11. 查询C001比C002课程成绩高的学生信息及课程分数。
+SELECT s.*,sc1.score c1,sc2.score c2
+FROM student s
+JOIN score sc1 ON s.student_id = sc1.student_id
+JOIN score sc2 ON s.student_id = sc2.student_id
+WHERE sc1.course_id = 'C001' AND sc2.course_id = 'C002' AND sc1.score > sc2.score;
+
+-- 12. 统计各科成绩各分数段人数：课程编号，课程名称，[100-85]，[85-70]，[70-60]，[60-0] 及所占百分比
+SELECT 
+    c.course_id,
+    c.course_name,
+    SUM(CASE WHEN sc.score BETWEEN 85 AND 100 THEN 1 ELSE 0 END) AS '85-100',
+    SUM(CASE WHEN sc.score BETWEEN 70 AND 84 THEN 1 ELSE 0 END) AS '70-84',
+    SUM(CASE WHEN sc.score BETWEEN 60 AND 69 THEN 1 ELSE 0 END) AS '60-69',
+    SUM(CASE WHEN sc.score BETWEEN 0 AND 59 THEN 1 ELSE 0 END) AS '0-59',
+    ROUND(SUM(CASE WHEN sc.score BETWEEN 85 AND 100 THEN 1 ELSE 0 END) / COUNT(sc.score) * 100, 2) AS '85-100百分比',
+    ROUND(SUM(CASE WHEN sc.score BETWEEN 70 AND 84 THEN 1 ELSE 0 END) / COUNT(sc.score) * 100, 2) AS '70-84百分比',
+    ROUND(SUM(CASE WHEN sc.score BETWEEN 60 AND 69 THEN 1 ELSE 0 END) / COUNT(sc.score) * 100, 2) AS '60-69百分比',
+    ROUND(SUM(CASE WHEN sc.score BETWEEN 0 AND 59 THEN 1 ELSE 0 END) / COUNT(sc.score) * 100, 2) AS '0-59百分比'
+FROM 
+    course c
+JOIN 
+    score sc ON c.course_id = sc.course_id
+GROUP BY 
+    c.course_id;
+
+-- 13. 查询选择C002课程但没有选择C004课程的成绩情况(不存在时显示为 null )。
+SELECT s.student_id, s.name, sc2.score AS C002_score, sc4.score AS C004_score
+FROM student s
+LEFT JOIN score sc2 ON s.student_id = sc2.student_id AND sc2.course_id = 'C002'
+LEFT JOIN score sc4 ON s.student_id = sc4.student_id AND sc4.course_id = 'C004'
+WHERE sc2.course_id IS NOT NULL AND sc4.course_id IS NULL;
+
+-- 14. 查询平均分数最高的学生姓名和平均分数。
+SELECT s.name, AVG(sc.score) AS average_score
+FROM student s
+JOIN score sc ON s.student_id = sc.student_id
+GROUP BY s.student_id
+ORDER BY average_score DESC
+LIMIT 1;
+
+-- 15. 查询总分最高的前三名学生的姓名和总分。
+SELECT s.name, SUM(sc.score) AS total_score
+FROM student s
+JOIN score sc ON s.student_id = sc.student_id
+GROUP BY s.student_id
+ORDER BY total_score DESC
+LIMIT 3;
+
+-- 16.  查询所有课程分数都高于85分的学生姓名。
+SELECT s.name
+FROM student s
+JOIN score sc ON s.student_id = sc.student_id
+GROUP BY s.student_id, s.name
+HAVING MIN(sc.score) > 85;
+
+-- 17. 查询男生和女生的人数。
+SELECT gender, COUNT(*) AS 人数
+FROM student
+GROUP BY gender;
+
+-- 18. 查询年龄最大的学生姓名。
+SELECT s.name
+FROM student s
+ORDER BY s.birth_date ASC
+LIMIT 1;
+
+-- 19. 查询年龄最小的教师姓名。
+SELECT name
+FROM teacher
+ORDER BY birth_date DESC
+LIMIT 1;
+
+-- 20. 查询学过「张教授」授课的同学的信息。
+SELECT DISTINCT s.*
+FROM student s
+JOIN score sc ON s.student_id = sc.student_id
+JOIN course c ON sc.course_id = c.course_id
+WHERE c.teacher_id = (SELECT teacher_id FROM teacher WHERE name='张教授');
+
+-- 21. 查询查询至少有一门课与学号为"2021001"的同学所学相同的同学的信息 。
+SELECT DISTINCT s.*
+FROM student s
+JOIN score sc1 ON s.student_id = sc1.student_id
+WHERE sc1.course_id IN (SELECT course_id FROM score WHERE student_id = '2021001') AND s.student_id != '2021001';
+
+-- 22. 查询每门课程的平均分数，并按平均分数降序排列。
+SELECT c.course_name, AVG(sc.score) AS average_score
+FROM course c
+LEFT JOIN score sc ON c.course_id = sc.course_id
+GROUP BY c.course_id, c.course_name
+ORDER BY average_score DESC;
+
+-- 23. 查询学号为"2021001"的学生所有课程的分数。
+SELECT c.course_name, sc.score
+FROM score sc
+JOIN course c ON sc.course_id = c.course_id
+WHERE sc.student_id = '2021001';
+
+-- 24. 查询所有学生的姓名、选修的课程名称和分数。
+SELECT s.name, c.course_name, sc.score
+FROM student s
+JOIN score sc ON s.student_id = sc.student_id
+JOIN course c ON sc.course_id = c.course_id;
+
+-- 25. 查询每个教师所教授课程的平均分数。
+SELECT t.name, AVG(sc.score) AS 平均分数
+FROM teacher t
+JOIN course c ON t.teacher_id = c.teacher_id
+JOIN score sc ON c.course_id = sc.course_id
+GROUP BY t.teacher_id, t.name;
+
+-- 26. 查询分数在80到90之间的学生姓名和课程名称。
+SELECT s.name, c.course_name
+FROM student s
+JOIN score sc ON s.student_id = sc.student_id
+JOIN course c ON sc.course_id = c.course_id
+WHERE sc.score BETWEEN 80 AND 90;
+
+-- 27. 查询每个班级的平均分数。
+SELECT s.my_class, AVG(sc.score) AS 平均分数
+FROM student s
+JOIN score sc ON s.student_id = sc.student_id
+GROUP BY s.my_class;
+
+-- 28. 查询没学过"王讲师"老师讲授的任一门课程的学生姓名。
+SELECT s.name
+FROM student s
+WHERE s.student_id NOT IN (
+    SELECT sc.student_id
+    FROM score sc
+    JOIN course c ON sc.course_id = c.course_id
+    WHERE c.teacher_id = (SELECT teacher_id FROM teacher WHERE name='王讲师'));
+
+-- 29. 查询两门及其以上小于85分的同学的学号，姓名及其平均成绩 。
+SELECT s.student_id, s.name, AVG(sc.score) AS 平均成绩
+FROM student s
+JOIN score sc ON s.student_id = sc.student_id
+WHERE sc.score < 85
+GROUP BY s.student_id
+HAVING COUNT(sc.course_id) >= 2;
+
+-- 30. 查询所有学生的总分并按降序排列。
+SELECT s.name, SUM(sc.score) AS total_score
+FROM student s
+JOIN score sc ON s.student_id = sc.student_id
+GROUP BY s.student_id
+ORDER BY total_score DESC;
+
+-- 31. 查询平均分数超过85分的课程名称。
+SELECT c.course_name
+FROM course c
+JOIN score sc ON c.course_id = sc.course_id
+GROUP BY c.course_id
+HAVING AVG(sc.score) > 85;
+
+-- 32. 查询每个学生的平均成绩排名。
+SELECT s.name, AVG(sc.score) AS 平均成绩,
+       RANK() OVER (ORDER BY AVG(sc.score) DESC) AS 排名
+FROM student s
+JOIN score sc ON s.student_id = sc.student_id
+GROUP BY s.student_id;
+
+-- 33. 查询每门课程分数最高的学生姓名和分数。
+SELECT c.course_name,s.name,sc.score
+FROM score sc
+JOIN course c ON sc.course_id = c.course_id
+JOIN student s ON sc.student_id = s.student_id
+WHERE (c.course_id, sc.score) IN (SELECT course_id, MAX(score) FROM score GROUP BY course_id);
+
+-- 34. 查询选修了"高等数学"和"大学物理"的学生姓名。
+SELECT s.name
+FROM student s
+JOIN score sc1 ON s.student_id = sc1.student_id
+JOIN course c1 ON sc1.course_id = c1.course_id
+JOIN score sc2 ON s.student_id = sc2.student_id
+JOIN course c2 ON sc2.course_id = c2.course_id
+WHERE c1.course_name = '高等数学' AND c2.course_name = '大学物理';
+
+-- 35. 按平均成绩从高到低显示所有学生的所有课程的成绩以及平均成绩（没有选课则为空）。
+SELECT s.name,c.course_name,sc.score,AVG(sc.score) OVER (PARTITION BY s.student_id) AS avg_score
+FROM student s
+LEFT JOIN score sc ON s.student_id = sc.student_id
+LEFT JOIN course c ON sc.course_id = c.course_id
+ORDER BY avg_score DESC;
+
+-- 36. 查询分数最高和最低的学生姓名及其分数。
+SELECT s.name, sc.score
+FROM student s
+JOIN score sc ON s.student_id = sc.student_id
+WHERE sc.score = (SELECT MAX(score) FROM score) OR sc.score = (SELECT MIN(score) FROM score);
+
+-- 37. 查询每个班级的最高分和最低分。
+SELECT s.my_class, MAX(sc.score) AS 最高分, MIN(sc.score) AS 最低分
+FROM student s
+JOIN score sc ON s.student_id = sc.student_id
+GROUP BY s.my_class;
+
+-- 38. 查询每门课程的优秀率（优秀为90分）。
+SELECT c.course_name,SUM(CASE WHEN sc.score >= 90 THEN 1 ELSE 0 END) / COUNT(sc.score) * 100 AS 优秀率
+FROM course c
+LEFT JOIN score sc ON c.course_id = sc.course_id
+GROUP BY c.course_id;
+
+-- 39. 查询平均分数超过班级平均分数的学生。
+SELECT s.*,AVG(sc.score) AS p_avg_sc,AVG(avg_class_score) AS c_avg_sc
+FROM student s
+JOIN score sc ON s.student_id = sc.student_id
+JOIN (SELECT my_class, AVG(score) AS avg_class_score FROM student st JOIN score scr ON st.student_id = scr.student_id GROUP BY my_class)
+			AS class_avg ON s.my_class = class_avg.my_class
+GROUP BY s.student_id
+HAVING p_avg_sc>c_avg_sc;
+
+-- 40. 查询每个学生的分数及其与课程平均分的差值。
+SELECT s.name,c.course_name,
+       (sc.score - avg_score) AS 差值
+FROM score sc
+JOIN student s ON sc.student_id = s.student_id
+JOIN course c ON sc.course_id = c.course_id
+JOIN (SELECT course_id, AVG(score) AS avg_score FROM score GROUP BY course_id) AS avg_scores ON sc.course_id = avg_scores.course_id;
